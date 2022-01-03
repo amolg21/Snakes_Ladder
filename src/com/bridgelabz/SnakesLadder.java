@@ -19,17 +19,17 @@ public class SnakesLadder {
             // Play_Check = Checking whether player will stop, will move forward or move behind.
             int Play_Check = (int) Math.floor(Math.random() * 10) % 3;
             if (Play_Check == 0) {
-                System.out.println("The player will not move and remains at same position");
+           //     System.out.println("The player will not move and remains at same position");
 
             } else if (Play_Check == 1) {
-                  System.out.println("The player will move ahead by " + die_value);
+          //        System.out.println("The player will move ahead by " + die_value);
                 Pre_Score = Score;
                 Score = Score + die_value;
               if (Score > Winning_Position) {
                   Score = Pre_Score;               // It will stay on the same position.
               }
             } else {
-                System.out.println("The player will move behind by " + die_value);
+           //     System.out.println("The player will move behind by " + die_value);
                 Score = Score - die_value;
                 if (Score < 0) {
                 Score=0;                          // It will stay on the same position.
@@ -37,7 +37,7 @@ public class SnakesLadder {
             }
             System.out.println("The position after each die value is " + Score);
         }
-       //    System.out.println("The number of times the dice was played is " + Die_Count );
-      //     System.out.println("The final position is " + Score);
+          System.out.println("The number of times the dice was played is " + Die_Count );
+          System.out.println("The final position is " + Score);
         }
 }
